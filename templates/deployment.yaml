@@ -4,7 +4,7 @@ kind: Deployment
       {{- .Values.customblock.author.address }}
 
       {{ "Values of values.yaml" }}
-      {{- .Chart.apiVersion }}
+      {{- .Chart.appVersion }}
       {{- .Chart.version }}
 metadata:
   name: {{ include "first-chart.fullname" . }}
