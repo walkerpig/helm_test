@@ -1,6 +1,10 @@
 # Default values for first-chart.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
+customblock:
+  author:
+    name: "cuongpt"
+    address: "23, 229/211 Khuong Trung, Ha Noi"
 
 replicaCount: 2
 

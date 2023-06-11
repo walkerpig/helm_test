@@ -1,6 +1,11 @@
 apiVersion: apps/v1
 kind: Deployment
-      {{ "Hi team, we are learning - " }}, {{ "helm" }}
+      {{- .Values.customblock.author.name }}
+      {{- .Values.customblock.author.address }}
+
+      {{ "Values of values.yaml" }}
+      {{- .Chart.apiVersion }}
+      {{- .Chart.version }}
 metadata:
   name: {{ include "first-chart.fullname" . }}
   labels:
