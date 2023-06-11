@@ -4,8 +4,8 @@ kind: Deployment
       {{- .Values.customblock.author.address }}
 
       {{ "Values of values.yaml" }}
-      {{- .Chart.appVersion }}
-      {{- .Chart.version }}
+      {{- .Chart.AppVersion }}
+      {{- .Chart.Version }}
 metadata:
   name: {{ include "first-chart.fullname" . }}
   labels:
