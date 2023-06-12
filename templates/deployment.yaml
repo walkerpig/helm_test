@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
       {{ .Values.customblock.author.name }}
-      {{ .Values.customblock.author.address | default "cuongtest" }}
-      {{ .Values.customblock.author.address | default "cuongtest" | upper }}
-      {{ .Values.customblock.author.address | default "cuongtest" | upper | quote }}            
+      {{ .Values.customblock.author.address | default "cuongtest" | nindent 2 }}
+      {{ .Values.customblock.author.address | default "cuongtest" | upper | nindent 4 }}
+      {{ .Values.customblock.author.address | default "cuongtest" | upper | quote | nindent 6 }}            
       {{ .Values.customblock.author.addr | default "cuongtest" }}
 
 metadata:
