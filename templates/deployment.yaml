@@ -3,6 +3,8 @@ kind: Deployment
       {{ .Values.customblock.author.name }}
       {{- with .Values.customblock.author.customBlockValue }}
       {{- toYaml . | nindent 4 }}
+      {{- else}}
+      {{ "value is none" }}
       {{- end }}
 metadata:
   name: {{ include "first-chart.fullname" . }}
