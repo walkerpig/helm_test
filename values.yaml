@@ -11,6 +11,7 @@ customblock:
       - "ducpa"
       - "thuyld"
       - "anhtt"
+    customBlockValueNone: {}
 
 replicaCount: 2
 

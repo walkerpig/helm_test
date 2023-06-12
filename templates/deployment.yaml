@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
       {{ .Values.customblock.author.name }}
-      {{- with .Values.customblock.author.customBlockValue }}
+      {{- with .Values.customblock.author.customBlockValueNone }}
       {{- toYaml . | nindent 4 }}
       {{- else}}
       {{ "value is none" }}
