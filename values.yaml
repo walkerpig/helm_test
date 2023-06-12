@@ -6,6 +6,11 @@ customblock:
     name: "cuongpt"
     address: "23, 229/211 Khuong Trung, Ha Noi"
     testBoolean: true
+    customBlockValue:
+      - "cuongpt"
+      - "ducpa"
+      - "thuyld"
+      - "anhtt"
 
 replicaCount: 2
 
