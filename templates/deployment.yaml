@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
       {{ .Values.customblock.author.name }}
-      {{- if not .Values.customblock.author.testBoolean.True }}
+      {{- if not .Values.customblock.author.testBoolean }}
       {{ "test conditional true" | nindent 4 }}
       {{- else }}
       {{ "test conditional false" | nindent 4 }}
