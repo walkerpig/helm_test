@@ -2,7 +2,9 @@ apiVersion: apps/v1
 kind: Deployment
       {{ .Values.customblock.author.name }}
       {{- if .Values.customblock.author.testBoolean }}
-      {{ "test conditional" | nindent 4 }}
+      {{ "test conditional true" | nindent 4 }}
+      {{- else }}
+      {{ "test conditional flase" | nindent 4 }}
       {{- end }}
 metadata:
   name: {{ include "first-chart.fullname" . }}
