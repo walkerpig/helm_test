@@ -1,8 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
-      {{ .Values.Customblock.Author.Name }}
-      {{ .Values.Customblock.Author.Address | default "cuongtest" }}
-      {{ .Values.Customblock.Author.Addre | default "cuongtest" }}
+      {{ .Values.customblock.author.name }}
+      {{ .Values.customblock.author.address | default "cuongtest" }}
+      {{ .Values.customblock.author.addr | default "cuongtest" }}
 
 metadata:
   name: {{ include "first-chart.fullname" . }}
