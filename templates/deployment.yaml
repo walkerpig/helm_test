@@ -1,12 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
       {{ .Values.customblock.author.name }}
-      {{- $myVar := .Values.ingress.enabled }}
-      {{- $myVar := true }}
-      {{- if $myVar }}
-      {{ "My value is true" | nindent 4 }}
-      {{- else }}
-      {{ "my value is false" | nindent 4 }}
+      {{- range .Values.customblock.author.customBlockValue }}
+author: 
+  - {{ . }}
       {{- end }}
 metadata:
   name: {{ include "first-chart.fullname" . }}
