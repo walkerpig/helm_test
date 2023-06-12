@@ -5,6 +5,7 @@ customblock:
   author:
     name: "cuongpt"
     address: "23, 229/211 Khuong Trung, Ha Noi"
+    testBoolean: true
 
 replicaCount: 2
 

@@ -1,11 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
       {{ .Values.customblock.author.name }}
-      {{ .Values.customblock.author.address | default "cuongtest" | nindent 2 }}
-      {{ .Values.customblock.author.address | default "cuongtest" | upper | nindent 4 }}
-      {{ .Values.customblock.author.address | default "cuongtest" | upper | quote | nindent 6 }}            
-      {{ .Values.customblock.author.addr | default "cuongtest" }}
-
+      {{- if .Values.customblock.author.testBoolean }}
+      {{ "test conditional" | nindent 4 }}
+      {{- end }}
 metadata:
   name: {{ include "first-chart.fullname" . }}
   labels:
