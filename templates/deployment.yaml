@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 
-{{ .Values.image_parent.pullPolicy | quote }}
+{{ .Values.image_parent | quote }}
 
 metadata:
   name: {{ include "first-chart.fullname" . }}
