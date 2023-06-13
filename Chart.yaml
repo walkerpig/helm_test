@@ -31,3 +31,6 @@ dependencies:
     version: "11.2.2"
     repository: "https://charts.bitnami.com/bitnami"
     condition: rabbitmq.enabled
+    import-values:
+      - child: image
+        parent: image_parent
