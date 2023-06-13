@@ -93,7 +93,7 @@ tolerations: []
 affinity: {}
 
 mysql:
-  enabled: false
+  enabled: true
 
 rabbitmq:
   enabled: true
