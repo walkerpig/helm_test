@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ include "first-chart.fullname" . }}
-  {{ .Values.image_parent.repository }}
   labels:
     {{- include "first-chart.labels" . | nindent 4 }}
 spec:
