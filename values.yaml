@@ -91,3 +91,9 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+mysql:
+  enabled: false
+
+rabbitmq:
+  enabled: true
